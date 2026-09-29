@@ -398,7 +398,7 @@ static int crypt_all(int *pcount, struct db_salt *salt)
 		}
 		while (tot_todo % MIN_KEYS_PER_CRYPT)
 			MixOrder[tot_todo++] = count;
-	}
+	} 
 	if (tot < count) {
 		// these do not get SIMD usage.
 		for (index = 0; index < count; ++index) {
